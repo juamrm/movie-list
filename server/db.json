@@ -4,81 +4,49 @@
       "id": "3",
       "title": "Nomadland",
       "year": 2020,
-      "actors": [
-        "Frances McDormand",
-        "David Strathairn",
-        "Linda May"
-      ]
+      "actors": ["Frances McDormand", "David Strathairn", "Linda May"]
     },
     {
       "id": "4",
       "title": "The Rider",
       "year": 2017,
-      "actors": [
-        "Brady Jandreau",
-        "Tim Jandreau",
-        "Lilly Jandreau"
-      ]
+      "actors": ["Brady Jandreau", "Tim Jandreau", "Lilly Jandreau"]
     },
     {
       "id": "5",
       "title": "Lady Bird",
       "year": 2017,
-      "actors": [
-        "Saoirse Ronan",
-        "Laurie Metcalf",
-        "Tracy Letts"
-      ]
+      "actors": ["Saoirse Ronan", "Laurie Metcalf", "Tracy Letts"]
     },
     {
       "id": "6",
       "title": "Little Women",
       "year": 2019,
-      "actors": [
-        "Saoirse Ronan",
-        "Emma Watson",
-        "Florence Pugh"
-      ]
+      "actors": ["Saoirse Ronan", "Emma Watson", "Florence Pugh"]
     },
     {
       "id": "7",
       "title": "Pulp Fiction",
       "year": 1994,
-      "actors": [
-        "John Travolta",
-        "Uma Thurman",
-        "Samuel L. Jackson"
-      ]
+      "actors": ["John Travolta", "Uma Thurman", "Samuel L. Jackson"]
     },
     {
       "id": "8",
       "title": "Inglourious Bastards",
       "year": 2009,
-      "actors": [
-        "Brad Pitt",
-        "Diane Kruger",
-        "Christoph Waltz"
-      ]
+      "actors": ["Brad Pitt", "Diane Kruger", "Christoph Waltz"]
     },
     {
       "id": "9",
       "title": "Eternal Sunshine of the Spotless Mind",
       "year": 2004,
-      "actors": [
-        "Jim Carrey",
-        "Kate Winslet",
-        "Tom Wilkinson"
-      ]
+      "actors": ["Jim Carrey", "Kate Winslet", "Tom Wilkinson"]
     },
     {
       "id": "10",
       "title": "The Grand Budapest Hotel",
       "year": 2014,
-      "actors": [
-        "Ralph Fiennes",
-        "F. Murray Abraham",
-        "Mathieu Amalric"
-      ]
+      "actors": ["Ralph Fiennes", "F. Murray Abraham", "Mathieu Amalric"]
     },
     {
       "id": "d549",
