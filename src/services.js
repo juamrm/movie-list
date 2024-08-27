@@ -18,6 +18,8 @@ async function getMovies() {
 }
 
 // Print the list of movies
+// to delete from DB id must be a string: listItem.innerHTML = `${movie.title} <button class="delete-button" onclick="deleteMovie('${movie.id}')">Delete</button>`;
+
 async function printMovies() {
   const movies = await getMovies();
   if (movies && movies.length > 0) {
@@ -44,6 +46,7 @@ async function addMovie() {
       if (!response.ok) {
         throw new Error("Failed to add movie");
       }
+
       taskInput.value = ""; // Clear the input field
       printMovies(); // Refresh the list
     } catch (error) {
@@ -75,6 +78,4 @@ async function deleteMovie(id) {
   }
 }
 // update the list?
-
-//passar pelo id
-//criar um metodo q passe pelo id
+//usar metodo q passe pelo id
