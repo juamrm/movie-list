@@ -1,0 +1,18 @@
+{
+  "name": "movie_list",
+  "version": "1.0.0",
+  "main": "services.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "apiFake": "json-server server/db.json -s ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.2"
+  },
+  "description": "",
+  "devDependencies": {}
+}
