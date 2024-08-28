@@ -11,19 +11,6 @@ Update information about a movie.
 Project structure
 The project is organized as follows:
 
-API-CRUD/
-│
-├── node_modules/ # Project dependencies
-├── server/
-│ └── db.json # File containing the fake database (fake API)
-├── src/
-│ ├── services.js # JavaScript file with CRUD functions
-│ └── style.css # CSS styles for the application
-├── .gitignore # File to ignore certain files/directories in Git
-├── index.html # Main page of the application
-├── package-lock.json # Dependency lock file (generated automatically)
-└── package.json # Project configuration file and dependencies
-
 Prerequisites
 Node.js installed on your machine.
 Basic familiarity with JavaScript, HTML, and CSS.
