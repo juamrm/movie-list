@@ -45,7 +45,8 @@ async function submitForm(event) {
 
     try {
       const response = await fetch(`${API_URL}/${movieId || ""}`, {
-        //reuse funtion for post update
+        //reuse funtion for PUT POST
+
         method: movieId ? "PUT" : "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(movieData),
