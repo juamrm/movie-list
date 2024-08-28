@@ -7,21 +7,21 @@
 - Add a new movie
 - Read existing movies.
 - Update information about a movie.
-- 
+
 
 # Prerequisites:
 
 Node.js installed on your machine.
 Basic familiarity with JavaScript, HTML, and CSS.
 
-# Installation:
+Installation:
 
 
 To get started with the project, follow these steps:
 
 1. Clone the repository:
 
-git clone https://github.com/juamrm/music-list
+git clone https://github.com/juamrm/movie-list
 
 cd music-list .
 
