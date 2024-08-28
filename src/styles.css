@@ -54,7 +54,7 @@ h2 {
 }
 
 .add-button:hover {
-  background-color: rgb(28, 175, 28);
+  background-color: rgb(0, 158, 0);
 }
 
 button {
@@ -69,11 +69,11 @@ button {
 }
 
 button:hover {
-  background-color: #d51b2d;
+  background-color: #d05965;
 }
 
 .edit-button {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(130, 144, 202);
   color: white;
   padding: 10px 15px;
   border: none;
@@ -85,7 +85,9 @@ button:hover {
 }
 
 .edit-button:hover {
-  background-color: #9868c8;
+  background-color: #60279a;
+  border: solid;
+  transition: 0, 3s;
 }
 
 #list {
