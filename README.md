@@ -14,6 +14,7 @@ The project is organized as follows:
 Prerequisites
 Node.js installed on your machine.
 Basic familiarity with JavaScript, HTML, and CSS.
+
 Installation
 To get started with the project, follow these steps:
 
