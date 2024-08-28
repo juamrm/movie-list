@@ -33,9 +33,13 @@ To get started with the project, follow these steps:
 1. Clone the repository:
 
 git clone https://github.com/juamrm/music-list
-cd music-list 2. Install the dependencies:
+cd music-list .
 
-npm install 3. Start the json-server:
+2 Install the dependencies:
+
+npm install
+
+3. Start the json-server:
 
 npm run apiFake
 This will start a server on your local host that will serve as our mock API.
