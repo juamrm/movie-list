@@ -1,10 +1,6 @@
 {
   "movies": [
     {
-      "title": "Movie",
-      "id": "3"
-    },
-    {
       "id": "4",
       "title": "The Rider",
       "year": 2017,
@@ -43,7 +39,7 @@
       ]
     },
     {
-      "title": "Eternal Sunshine of the Spotless Mind fsldfkerkowperik",
+      "title": "Eternal Sunshine of the Spotless Mind",
       "id": "9"
     },
     {
@@ -57,8 +53,8 @@
       ]
     },
     {
-      "id": "ecf5",
-      "title": "Movies 5"
+      "title": "test",
+      "id": "ecf5"
     },
     {
       "title": "Movie 2",
