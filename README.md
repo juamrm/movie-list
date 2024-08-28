@@ -7,22 +7,7 @@
 - Add a new movie
 - Read existing movies.
 - Update information about a movie.
-
-# Project structure:
-
-MOVIE-LIST/
-│
-├── node_modules/      # Project dependencies
-├── server/
-│   └── db.json        # File containing fake database (fake API)
-├── src/
-│   ├── services.js    # JavaScript file with CRUD function
-│   └── style.css      # CSS style for the application
-├── .gitignore         # File to ignore certain files/directories in Git
-├── index.html         # Main page of the application
-├── package-lock.json  # Dependency lock file (generated automatically)
-└── package.json       # Project configuration file and dependencies
-
+- 
 
 # Prerequisites:
 
