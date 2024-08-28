@@ -1,6 +1,7 @@
 // Get references to DOM elements
 const listTag = document.getElementById("list");
 const taskInput = document.getElementById("newTask");
+const movieIdInput = document.getElementById("movieId");
 const API_URL = "http://localhost:3000/movies";
 
 // Fetch and display movies
@@ -18,49 +19,61 @@ async function getMovies() {
 }
 
 // Print the list of movies
-// to delete from DB id must be a string: listItem.innerHTML = `${movie.title} <button class="delete-button" onclick="deleteMovie('${movie.id}')">Delete</button>`;
-
 async function printMovies() {
   const movies = await getMovies();
+  listTag.innerHTML = ""; // Clear the list before reprinting
   if (movies && movies.length > 0) {
     movies.map((movie) => {
       const listItem = document.createElement("li");
-      listItem.innerHTML = `${movie.title} <button class="delete-button" onclick="deleteMovie('${movie.id}')">Delete</button>`;
+      listItem.innerHTML = `
+        ${movie.title} 
+        <button class="edit-button" onclick="editMovie('${movie.id}', '${movie.title}')">Edit</button>
+        <button class="delete-button" onclick="deleteMovie('${movie.id}')">Delete</button>`;
       listTag.appendChild(listItem);
     });
   }
 }
 
-// Add a new movie
+// Add or update a movie
+async function submitForm(event) {
+  event.preventDefault();
+  const movieTitle = taskInput.value.trim();
+  const movieId = movieIdInput.value;
 
-async function addMovie() {
-  const newMovieTitle = taskInput.value.trim();
-  if (newMovieTitle) {
-    const newMovie = { title: newMovieTitle };
+  if (movieTitle) {
+    const movieData = { title: movieTitle };
+
     try {
-      const response = await fetch(API_URL, {
-        method: "POST",
+      const response = await fetch(`${API_URL}/${movieId || ""}`, {
+        //reuse funtion for post update
+        method: movieId ? "PUT" : "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(newMovie),
+        body: JSON.stringify(movieData),
       });
+
       if (!response.ok) {
-        throw new Error("Failed to add movie");
+        throw new Error(`Failed to ${movieId ? "update" : "add"} movie`);
       }
 
       taskInput.value = ""; // Clear the input field
+      movieIdInput.value = ""; // Clear the hidden ID field
       printMovies(); // Refresh the list
     } catch (error) {
-      console.error("Error adding movie:", error);
+      console.error(`Error ${movieId ? "updating" : "adding"} movie:`, error);
     }
   } else {
     alert("Please enter a movie title");
   }
 }
 
-printMovies();
+// Edit a movie (pre-fill the form for updating)
+function editMovie(id, title) {
+  movieIdInput.value = id;
+  taskInput.value = title;
+  taskInput.focus();
+}
 
 // Delete a movie
-
 async function deleteMovie(id) {
   if (confirm("Are you sure you want to delete this movie?")) {
     try {
@@ -68,6 +81,7 @@ async function deleteMovie(id) {
         method: "DELETE",
         headers: { "Content-Type": "application/json" },
       });
+
       if (!response.ok) {
         throw new Error("Failed to delete movie");
       }
@@ -77,5 +91,6 @@ async function deleteMovie(id) {
     }
   }
 }
-// update the list?
-//usar metodo q passe pelo id
+
+// Initialize the movie list
+printMovies();

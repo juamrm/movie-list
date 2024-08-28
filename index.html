@@ -9,14 +9,15 @@
   <body>
     <h1>Movie List</h1>
 
-    <h2>Movies to watch:</h2>
-    <ul id="taskList"></ul>
-    <input type="text" id="newTask" placeholder="Add movie" />
-    <button class="add-button" onclick="addMovie()">Add</button>
-
     <div>
-      <ul id="list"></ul>
+      <form id="movieForm" onsubmit="submitForm(event)">
+        <input type="hidden" id="movieId" />
+        <input type="text" id="newTask" placeholder="Add movie" />
+        <button type="submit" class="add-button">Add</button>
+      </form>
     </div>
+
+    <ul id="list"></ul>
 
     <script src="src/services.js"></script>
   </body>
