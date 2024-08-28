@@ -1,21 +1,33 @@
-# music-list
+# movie-list
 
-Rest API CRUD (Create, Read, Update, Delete) in JavaScript using modern technologies like jsonserver to consume an API in real-time.
+# Rest API CRUD (Create, Read, Update, Delete) in JavaScript using modern technologies like jsonserver to consume an API in real-time.
 
-The application is a list of movies where you can:
+# The application is a list of movies where you can:
 
-Add a new movie
-Read existing movies.
-Update information about a movie.
+# Add a new movie
+# Read existing movies.
+# Update information about a movie.
 
-Project structure
-The project is organized as follows:
+# Project structure
+MOVIE-LIST/
+│
+├── node_modules/      # Project dependencies
+├── server/
+│   └── db.json        # File containing fake database (fake API)
+├── src/
+│   ├── services.js    # JavaScript file with CRUD function
+│   └── style.css      # CSS style for the application
+├── .gitignore         # File to ignore certain files/directories in Git
+├── index.html         # Main page of the application
+├── package-lock.json  # Dependency lock file (generated automatically)
+└── package.json       # Project configuration file and dependencies
 
-Prerequisites
+
+# Prerequisites
 Node.js installed on your machine.
 Basic familiarity with JavaScript, HTML, and CSS.
 
-Installation
+# Installation
 To get started with the project, follow these steps:
 
 1. Clone the repository:
@@ -32,8 +44,9 @@ npm install
 
 npm run apiFake
 
-This will start a server on your local host that will serve as our mock API.
+# This will start a server on your local host that will serve as our mock API.
 
-4. Open the index.html file:
+
+# Open the index.html file:
 
 You can open index.html in your browser to see the application in action.
