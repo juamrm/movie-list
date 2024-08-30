@@ -49,4 +49,4 @@ Javascript, HTML, CSS...
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](/http://127.0.0.1:5501/index.html)
