@@ -47,6 +47,3 @@ Javascript, HTML, CSS...
 
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/julianaamrm/)
 
-## Screenshots
-
-![App Screenshot](/http://127.0.0.1:5501/index.html)
